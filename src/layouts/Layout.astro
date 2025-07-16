@@ -1,0 +1,20 @@
+---
+import Header from '../components/Header.astro';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi sitio</title>
+    <!-- Estilos globales -->
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+
+  <body>
+    <Header />
+    <slot />
+    <script src="/js/header.js" is:inline></script>
+  </body>
+</html>

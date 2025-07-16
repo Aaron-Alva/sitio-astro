@@ -1,16 +1,46 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Energy from '../components/Energy.astro';
+import Works from '../components/Works.astro';
+import Faqs from '../components/Faqs.astro';
+import VideoS from '../components/VideoS.astro';
+import Blog from '../components/Blog.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <!-- Sección Hero sin id porque es la vista principal -->
+  <Hero />
+
+  <!-- Secciones ancladas para navegación desde el header -->
+  <section id="about">
+    <About />
+  </section>
+
+  <section id="solutions">
+    <Energy />
+  </section>
+
+  <section id="works">
+    <Works />
+  </section>
+
+  <section id="faqs">
+    <Faqs />
+  </section>
+
+  <VideoS />
+
+  <section id="blog">
+    <Blog />
+  </section>
+
+  <section id="contact">
+    <Contact />
+  </section>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,53 @@
+---
+const blogPosts = [
+  {
+    category: "Energy News",
+    title: "How to Maximize Your Solar Energy Savings",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: "/EnergyNews.webp"
+  },
+  {
+    category: "Sustainability",
+    title: "Advantages of Going Solar Power System",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: "/Sustainability.webp"
+  },
+  {
+    category: "Efficiency Tips",
+    title: "Solar Energy System for Rural Areas",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: "/EfficiencyT.webp"
+  },
+  {
+    category: "Tips",
+    title: "Green Energy Incentives and Rebates",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: "/Tips.webp"
+  }
+];
+---
+
+<section class="blog-sec" id="blog">
+  <div class="blog-container">
+    <div class="blog-header-center">
+      <h2>Our Blog</h2>
+      <h3>Insights and Innovations</h3>
+    </div>
+
+    <div class="blog-grid">
+      {blogPosts.map((post) => (
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src={post.image} alt={post.title} />
+          </div>
+          <div class="blog-info">
+            <span class="blog-category">{post.category}</span>
+            <h6>{post.title}</h6>
+            <p>{post.text}</p>
+            <a href="#">read more</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

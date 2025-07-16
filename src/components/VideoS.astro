@@ -1,0 +1,26 @@
+<div class="video-section">
+  <div class="container-fluid">
+    <div class="video-bg">
+      <div class="video-wrapper">
+        <button class="play-button" onclick="document.getElementById('video-modal').showModal()">
+          <img src="/icons/play.svg" alt="play" />
+          <span class="circle"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <dialog id="video-modal" class="video-modal">
+    <div class="video-modal-content">
+      <button class="close-button" onclick="document.getElementById('video-modal').close()">×</button>
+      <iframe
+        src="https://youtu.be/yAoLSRbwxL8?si=6jos-7i98ESW5sei"
+        title="Video"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </dialog>
+</div>
