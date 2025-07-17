@@ -1,47 +1,76 @@
-# Astro Starter Kit: Minimal
+# Sitio Web en Astro – Proyecto de práctica
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este repositorio contiene un sitio web desarrollado con [Astro](https://astro.build/), utilizando componentes personalizados, diseño responsive y desplegado en la plataforma Vercel.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Sitio desplegado
 
-## 🚀 Project Structure
+ [https://sitio-astro.vercel.app](https://sitio-astro.vercel.app)  
+> *(Reemplaza este enlace si el tuyo es diferente.)*
 
-Inside of your Astro project, you'll see the following folders and files:
+---
+
+## Repositorio del código fuente
+
+ [https://github.com/Aaron-Alva/sitio-astro](https://github.com/Aaron-Alva/sitio-astro)
+
+---
+
+## Estructura del proyecto
 
 ```text
 /
-├── public/
+├── public/             # Archivos estáticos (imágenes, fuentes, íconos, etc.)
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/     # Componentes reutilizables en Astro
+│   └── pages/          # Páginas del sitio (.astro)
+├── package.json        # Configuración de dependencias y scripts
+├── astro.config.mjs    # Configuración del proyecto Astro
+└── README.md           # Este archivo
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Tecnologías utilizadas
 
-Any static assets, like images, can be placed in the `public/` directory.
+- [Astro](https://astro.build/)
+- HTML y CSS (Tailwind opcional)
+- JavaScript (si aplica)
+- [Vercel](https://vercel.com) para el despliegue
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## Cómo ejecutar el proyecto localmente
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Aaron-Alva/sitio-astro.git
+   ```
 
-## 👀 Want to learn more?
+2. Entra en la carpeta del proyecto:
+   ```bash
+   cd sitio-astro
+   ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## Autor
+
+Creado por **Aaron Alvarado** como parte de una práctica con Astro y despliegue en Vercel.
+
+---
+
+## Licencia
+
+Este proyecto está disponible bajo la licencia [MIT](https://opensource.org/licenses/MIT).
