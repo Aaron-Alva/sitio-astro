@@ -1,7 +1,7 @@
 
 /* =======================================
-   configuración base
-========================================== */
+   configuración base*/
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -185,7 +185,7 @@ body {
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Capa oscura para mejorar contraste */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -223,7 +223,7 @@ body {
 .hero-card {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -236,35 +236,35 @@ body {
 }
 
 .hero-card img {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
 .hero-card h4 {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
   margin: 0;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 3rem 0.5rem;
+    padding: 2rem 0.5rem;
     margin: 1rem 0;
   }
 
   .hero-cards {
     flex-direction: column;
+    padding: 2rem;
     align-items: center;
   }
 
   .hero-card {
     flex-direction: column;
     text-align: center;
-    max-width: 100%;
-    border-radius: 0;
+    border-radius: 1.5rem;
   }
 }
 
@@ -275,7 +275,10 @@ body {
 .power-section {
   position: relative;
   padding: 4rem 1rem 0 1rem;
-  background-color: #f5f5f5;
+  background-image: url('/img11.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
   overflow: hidden;
   margin: 2rem auto;
 }
@@ -626,14 +629,19 @@ body {
 
 /* ============================================ */
 /* SECCIÓN DE TRABAJO / WORK SECTION */
-
 .work-section {
   position: relative;
   padding: 6rem 1rem;
-  background-color: #f5f5f5;
+  background-image: url('/img11.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  overflow: hidden;
 }
 
 .work-container {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -700,7 +708,6 @@ body {
 .work-content span {
   display: block;
   font-size: 0.9rem;
-  color: #999999;
   margin-bottom: 0.25rem;
 }
 
@@ -708,19 +715,6 @@ body {
   font-size: 1.2rem;
   color: #000;
   margin: 0;
-}
-
-/* Imagen decorativa del fondo */
-.right-wind-frame {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  opacity: 0.1;
-}
-
-.right-wind-frame img {
-  max-width: 300px;
 }
 
 /* Responsive para dispositivos pequeños */
@@ -733,6 +727,7 @@ body {
     text-align: left;
   }
 }
+
 
 /* =========================================== */
 /* SECCIÓN DE PREGUNTAS FRECUENTES / FAQS */
@@ -1054,7 +1049,11 @@ body {
 
 .blog-sec {
   padding: 6rem 1rem;
-  background-color: #f9fafb;
+  background-image: url('/img11.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  overflow: hidden;
 }
 
 /* Contenedor general del blog */
