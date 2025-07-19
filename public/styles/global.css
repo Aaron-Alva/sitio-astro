@@ -341,9 +341,6 @@ body {
   color: #fff;
 }
 
-/* ========================= */
-/* CONTENIDO DE TEXTO       */
-
 .text-col .power-text h2 {
   font-size: 1rem;
   color: #FE981A;
@@ -374,9 +371,6 @@ body {
   line-height: 1.6;
   color: #333;
 }
-
-/* ============================= */
-/* BLOQUE DE LLAMADA / TELÉFONO */
 
 .power-call {
   display: flex;
@@ -788,7 +782,7 @@ body {
 }
 
 .faq-header h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
@@ -878,6 +872,155 @@ body {
   }
 }
 
+/* ============================================= */
+/* SECCIÓN DE Team */
+.power-section {
+  padding: 4rem 1rem 0 1rem;
+  background-image: url('/img11.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  margin: 2rem auto;
+}
+
+.power-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.power-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Responsive Grid: 1 columna texto + 2 tarjetas */
+@media (min-width: 768px) {
+  .power-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
+
+  .text-col {
+    grid-column: 1 / 2;
+  }
+
+  .team-card:nth-of-type(2) {
+    grid-column: 2 / 3;
+  }
+
+  .team-card:nth-of-type(3) {
+    grid-column: 3 / 4;
+  }
+}
+
+/* Text Content */
+.text-col .power-text h2 {
+  font-size: 1rem;
+  color: #FE981A;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.text-col .power-text h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #FE981A;
+  margin-top: 0.3rem;
+}
+
+.text-col .power-text h3 {
+  font-size: 2.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.text-col .power-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Team Cards */
+.team-card {
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+}
+
+.team-card .profile {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-info h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin: 0;
+}
+
+.card-info p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0.3rem 0 0 0;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.social-btn img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(59%) sepia(0%);
+  transition: filter 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #f5a623;
+  border: none;
+}
+
+.social-btn:hover img {
+  filter: brightness(0) invert(100%);
+}
 
 /* ============================================= */
 /* SECCIÓN DE VIDEO DESTACADO */
